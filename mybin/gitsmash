@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git fetch  # Make sure we are up to date first
+git add .  # Add everything we touched to this commit
+git commit # Create the commit and write the message
+git push   # Push this commit to origin

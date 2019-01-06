@@ -1,0 +1,9 @@
+#!/bin/bash
+
+keyname="$1"
+comment="$2"
+keydir="${HOME}/.ssh"
+
+ssh-keygen -t rsa -C "$comment" -f "$keydir/$keyname" -q -N ""
+
+cat "$keydir/$keyname.pub"

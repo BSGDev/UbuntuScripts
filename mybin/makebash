@@ -1,0 +1,10 @@
+#!/bin/bash
+
+target="$1"
+
+
+touch "$target"
+chmod a+x "$target"
+echo "#!/bin/bash" >> "$target"
+echo "" >> "$target"
+nano "$target"
